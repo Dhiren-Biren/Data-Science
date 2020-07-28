@@ -1,0 +1,76 @@
+Installation and Setup
+Before you start with this book, we'll install Anaconda environment which
+consists of Python and Jupyter Notebook.
+Installing Anaconda
+1. Visit https://www.anaconda.com/download/ in your browser.
+2. Click on Windows, Mac, or Linux, depending on the OS you are
+working on.
+3. Next, click on the Download option. Make sure you download the
+latest version (3.6).
+4. Open the installer after download.
+5. Follow the steps in the installer and that's it! Your Anaconda
+distribution is ready.ix
+Updating Jupyter and Installing Dependencies
+1. Search for Anaconda Prompt and open it.
+2. Type the following commands to update conda and Jupyter:
+#Update conda
+conda update conda
+#Update Jupyter
+conda update jupyter
+#install packages
+conda install numpy
+conda install pandas
+conda install statsmodels
+conda install matplotlib
+conda install seaborn
+1. To open Jupyter Notebook from Anaconda Prompt, use the following
+command:
+jupyter notebook
+
+# for mathematical operations
+import numpy as np
+# for dataframe operations
+import pandas as pd
+
+# for data visualizations
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# setting up the size of the figures
+plt.rcParams['figure.figsize'] = (16, 5)
+# setting up the style of the plot
+plt.style.use('fivethirtyeight')
+
+# for interactivity
+import ipywidgets as widgets
+from ipywidgets import interact
+from ipywidgets import interact_manual
+
+# for exploratory data analysis
+import sweetviz
+
+# for machine learning
+import sklearn
+import imblearn
+
+
+Note imblearn and sweetViz workig good in python 3.6 if you are having higher version then create the virtual enviroment 
+by
+1. Check conda is installed and in your PATH
+Open a terminal client.
+Enter conda -V into the terminal command line and press enter.
+If conda is installed you should see somehting like the following.
+$ conda -V
+conda 3.7.0
+
+conda update conda
+
+next
+conda create -n yourenvname python=3.6 anaconda
+
+
+else
+$ conda create -n tensorflow python=3.7
+$ conda activate tensorflow
+$ conda install python=3.6.5
+$ pip install tensorflow
